@@ -21,11 +21,13 @@ listings. I use the following config, which you’ll need to adjust to match you
 particular setup – the ‘icons’ alias and the ‘mod_autoindex’ section are the 
 main areas to pay attention to:
 
+# Virtualhost example configuration file with autoindex theme support
  <VirtualHost *:80>
     ServerName your.vhost.local
 
     DocumentRoot /var/www/your.vhost.local/public_html
 
+	# Define where is the theme and icons directory
     Alias /icons/ /var/www/your.vhost.local/include/icons/
 	Alias /include/ /var/www/your.vhost.local/include/
 	
@@ -33,7 +35,8 @@ main areas to pay attention to:
         AllowOverride All
         Order allow,deny
         Allow from all
- 
+
+		# Tell Apache to add theme support to autoindex
         <IfModule mod_autoindex.c>
             Options Indexes FollowSymLinks
             IndexOptions +FancyIndexing 
@@ -55,7 +58,6 @@ main areas to pay attention to:
  
     </Directory>
  </VirtualHost>
-
 You’ll need mod_autoindex for any of this to work – it should be installed by 
 default with Apache in most linux distributions.
 
