@@ -1,0 +1,193 @@
+
+/**
+ * Repos Style (c) 2007 www.reposstyle.com
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/* reposstyle.com version 1.5 */
+html {
+	filter: expression(document.execCommand("BackgroundImageCache", false, true));
+	margin: 0;
+	padding: 0;
+	background:#e7e7e7
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 82.5%;
+	color: #111;
+}
+h2 {
+	font-weight:normal;
+	margin:0;
+	padding:5px 0;
+	font-size:.9em;
+	color: #444444;
+	width:97.2%;
+	background:#ddd; margin-left:10px; color:#444;
+}
+h2 > span{ margin-left:10px} 
+a,
+a:visited {
+	text-decoration: none;
+	color: #111;
+}
+a:hover {
+	text-decoration: underline;
+}
+h2 a {
+	color: #667799 !important;
+}
+img {
+	border: none;
+}
+#wrapper{
+	width:720px;
+	background:White;
+	border:1px solid #ccc;
+	border-width: 0 0 3px 0;
+	margin:0 auto;
+}
+#main-logo{
+	width:140px;
+	margin-left:20px;
+}
+div#files {
+	margin: 0 auto 0 auto;
+	width: 100%;
+	margin:0 auto;
+	font-size:.83em;
+}
+/* command = commandbar button, <a> is  active, <span> is greyed out */
+.command {
+	background-position: left center;
+	background-repeat: no-repeat;
+	font-size: 82.5%;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 0.2em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+}
+/* common page elements, may also be layouted for each tool */
+#commandbar {
+width:97.2%; height:30px; background:#cdcc00; margin-left:10px; color:White; text-transform:uppercase; font-weight:bold; font-family:Arial; letter-spacing:0.1em; border-top:6px solid #bcbd00}
+
+#commandbar ul, #commandbar li{ margin:0; padding:0;}
+#commandbar ul{ float:right; }
+#commandbar li{ float:left; display:block }
+#commandbar a { width:8%; float:left; }
+
+/* command = commandbar button, <a> is  active, <span> is greyed out */
+#commandbar a {
+	background-position: left center;
+	background-repeat: no-repeat;
+	font-size: 82.5%;
+	margin:4px 1em 0 0;
+	padding: 3px 0 0 25px;
+	line-height: 1.5em;
+	color: #555555;
+}
+#header { padding:20px 10px 20px 10px; max-width:100%; margin:0 auto; }
+
+#wrapper-header{ margin:30px 0 0 40px;}
+#header h1 { border-right: 1px solid #ccc; height:50px; padding-right:20px;}
+#header h1 img{padding:5px 10px 0 0 ;}
+#description { display:block;text-transform:uppercase; color:#bbc936; margin-top:17px; width:140px; font-family:Georgia; font-size:.9em; padding-top:20px; }
+
+
+
+/* common commands */
+#commandbar #parent {
+	background-image: url('/include/icons/parent.gif');
+}
+#commandbar #refresh {
+	background-image: url('/include/icons/refresh.gif');
+}
+#commandbar #home {
+	background-image: url('/include/icons/home.gif');
+}
+.column{float:left; margin-right:10px; display:block;}
+#footer { text-align: center; font-size: .85em; margin: 0; height:90px; border-top:1px solid #e7e7e7; padding-top:10px; margin-top:20px; width:100% }
+#footer a { text-decoration: none; color:#888 }
+#footer-info { color:#bbb;text-align:left; padding:20px 0 0px 30px; }
+#footer-logo { margin:25px 0 0 50px; width:100px; }
+table {
+	width: 80%;
+	border-collapse: collapse;
+	margin: 40px auto;
+}
+table tr {
+	padding: 10px 0;
+	margin: 0;
+}
+table td,
+table th {
+	padding:0;
+    margin: 0;
+    text-align: left;
+}
+table th{ font-family:Georgia; font-size:1.2em; border-bottom:1px solid #ccc; margin-bottom:15px !important}
+table td {
+	border: none;
+    border-bottom: 1px solid #FFFFFF;
+	text-align: right;
+    padding: 1px 0 1px 0;
+}
+table td.name {
+	text-align: left;
+}
+table tr.hover td {
+    border-bottom: 1px dashed #CCCC99;
+}
+table th.icon {
+	width: 16px;
+	height: 16px;
+	padding-right: 5px;
+}
+table th.date {
+	text-align: right;
+	width: 180px;
+}
+table th.size {
+	text-align: right;
+	width: 80px;
+}
+table hr {
+	display: none;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
