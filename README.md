@@ -23,10 +23,13 @@ main areas to pay attention to:
 
  <VirtualHost *:80>
     ServerName your.vhost.local
-    DocumentRoot /var/www/your.vhost.local
-    Alias /icons/ /var/www/your.vhost.local/index-style/icons/
- 
-    <Directory "/var/www/your.vhost.local">
+
+    DocumentRoot /var/www/your.vhost.local/public_html
+
+    Alias /icons/ /var/www/your.vhost.local/include/icons/
+	Alias /include/ /var/www/your.vhost.local/include/
+	
+    <Directory "/var/www/your.vhost.local/public_html">
         AllowOverride All
         Order allow,deny
         Allow from all
