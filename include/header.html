@@ -1,10 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<title>download.recurser.com</title>
+		<title>Listing folder</title>
+		<meta name="description" content="Apache folder listing" />
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 		<meta content="noarchive" name="robots" />
-		<link rel="shorcut icon" href="/icons/favicon.ico" /> 
+		<link rel="shorcut icon" href="/icons/favicon.ico" />
 		<link href="/favicon.ico" rel="shortcut icon" />
 		<link href="/include/style.css" media="screen,projection" type="text/css" rel="stylesheet" />
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
@@ -22,7 +23,8 @@
 					breadcrumbs += '<a href="' +  currentPath + '">' + segments[i] + '</a>/';
 				}
 			}
-			document.title = document.domain + ':' + location;
+			
+			document.title = "Listing folder '" + location + "' at " + document.domain;
 			$('#folder').html(breadcrumbs);
 			
 			// Hide the 'parent' link if we're at the top level

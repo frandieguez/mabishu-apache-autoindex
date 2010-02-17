@@ -1,16 +1,13 @@
 # mabishu-apache-autoindex: An autoindex theme for Apache autoindex module with Mabishu Studio branding 
 
-Index-Style is a set of html, css and image files designed to work together with
-the mod_autoindex module to make the default Apache file listings look a little
-nicer. The UI design is based almost entirely on the great work done by the guys
-at [Repos-Style](http://www.reposstyle.com/), although the code itself is largely
-done from scratch (as mod_autoindex doesn’t support XSLT).
+mabishu-apache-autoindex is a set of html, css, icons and image files designed to work together with the mod_autoindex module to make the default Apache file listings look a
+little nicer.
 
 ## Installation
 
 First, get a copy of the "include" folder – the easiest way is to change to
 the document root of the domain you want to style, and check it out from
-subversion (in my case the domain will be download.recurser.com ) :
+git:
 
  $ cd /var/www/YOUR.VHOST.LOCAL
  $ git clone http://github.com/frandieguez/mabishu-apache-autoindex.git
